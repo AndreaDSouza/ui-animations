@@ -1,0 +1,18 @@
+<div class="container">
+    <div #pixi id="chart"></div>
+</div>
+<div class="slidecontainer">
+    <input type="range" min="1" [max]="totalSteps" [value]="currStep" class="slider" #rangeslider
+        (input)="sliderChange(rangeslider.value)" autofocus>
+    <div class="custom-range"></div>
+    <div class="tick-wrapper">
+        <div *ngFor="let t of sampleData" class="tick"></div>
+    </div>
+
+    <div class="custom-name">
+        <div>6 AM</div>
+        <div>NOON</div>
+        <div>6 PM</div>
+    </div>
+    <div class="refresh" (click)="replayAnimation()">&#8635;</div>
+</div>
