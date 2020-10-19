@@ -17,6 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://AndreaDSouza.github.io/ui-animations/",
+            "deployUrl": "https://AndreaDSouza.github.io/ui-animations/",
             "outputPath": "dist/ng-topology",
             "index": "src/index.html",
             "main": "src/main.ts",
