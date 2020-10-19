@@ -1,6 +1,0 @@
-<canvas #canvas id="canvas" style="height: 500px;width: 800px;border:1px solid"></canvas>
-<canvas #sphereCanvas id="sphereCanvas"></canvas>
-<div>
-    <h2 *ngFor="let data of dataObj; let i = index" (mouseenter)="opacity = 0;mouseEnter(i)"
-        (mouseleave)="opacity = 1;mouseLeave(i)">{{data.title}}<br /><br /></h2>
-</div>
